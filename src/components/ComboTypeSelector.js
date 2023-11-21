@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import '../App.css'
 import styled from 'styled-components';
 import { getCombo } from '../functions/comboFunctions.js';
+
 
 const ComboTypeSelector = () => {
 
@@ -18,56 +20,66 @@ const ComboTypeSelector = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>
+        <div className='combo-generator-container'>
+            <div className='combo-selector-container'>
+                <form onSubmit={handleSubmit}>
+                    <div>
                         <input
+                            id="offensive"
+                            name="offensive"
                             type="radio"
                             value="offensive"
                             checked={selectedOption === 'offensive'}
                             onChange={handleOptionChange}
                         />
-                        Offensive
-                    </label>
-                </div>
-                <div>
-                    <label>
+                        <label for="offensive" className="offensive-label">
+                            Offensive
+                        </label>
+                    </div>
+                    <div>
                         <input
+                            id="defensive"
+                            name="defensive"
                             type="radio"
                             value="defensive"
                             checked={selectedOption === 'defensive'}
                             onChange={handleOptionChange}
                         />
-                        Defensive
-                    </label>
-                </div>
-                <div>
-                    <label>
+                        <label for="defensive" className="defensive-label">
+                            Defensive
+                        </label>
+                    </div>
+                    <div>
                         <input
+                            id="balanced"
+                            name="balanced"
                             type="radio"
                             value="balanced"
                             checked={selectedOption === 'balanced'}
                             onChange={handleOptionChange}
                         />
-                        Balanced
-                    </label>
-                </div>
-                <div>
-                    <label>
+                        <label for="balanced" className="balanced-label">
+                            Balanced
+                        </label>
+                    </div>
+                    <div>
                         <input
+                            id="reactive"
+                            name="reactive"
                             type="radio"
                             value="reactive"
                             checked={selectedOption === 'reactive'}
                             onChange={handleOptionChange}
                         />
-                        Reactive
-                    </label>
-                </div>
-                <div>
-                    <button type="submit">Generate Combo</button>
-                </div>
-            </form>
+                        <label for="reactive" className="reactive-label">
+                            Reactive
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">GO!</button>
+                    </div>
+                </form>
+            </div>
             <div className='generated-combo-container'>
                 {generatedCombo && (
                     <div>
