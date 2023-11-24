@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
 .App {
+  z-index: 1;
   text-align: center;
+}
+
+body {
+  background-color: #1b1b1b;
 }
 
 .App-logo {
@@ -39,7 +44,20 @@
   }
 }
 
+.bg-image {
+  position: fixed;
+  z-index: -999;
+  margin-left: 23%;
+  width: 1024px;
+  height: 1024px;
+}
+
 h1 {
+  margin: 3% auto;
+  width: 70%;
+  color: #fff;
+  background-color: #ff0000;
+  border: solid 6px #110074;
   font-size: 104px;
   font-family: 'VT323';
 }
@@ -89,4 +107,16 @@ button {
 button:active {
   color: #000;
   background: #fff;
+}
+
+h2 {
+  color: #fff;
+  background-color: #110074;
+  border: solid 3px #000;
+}
+
+.generated-combo-container li {
+  color: #fff;
+  background-color: #110074;
+  border: solid 3px #000;
 }

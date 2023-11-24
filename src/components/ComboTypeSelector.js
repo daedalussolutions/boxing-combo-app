@@ -32,7 +32,7 @@ const ComboTypeSelector = () => {
                             checked={selectedOption === 'offensive'}
                             onChange={handleOptionChange}
                         />
-                        <label for="offensive" className="offensive-label">
+                        <label htmlFor="offensive" className="offensive-label">
                             Offensive
                         </label>
                     </div>
@@ -45,7 +45,7 @@ const ComboTypeSelector = () => {
                             checked={selectedOption === 'defensive'}
                             onChange={handleOptionChange}
                         />
-                        <label for="defensive" className="defensive-label">
+                        <label htmlFor="defensive" className="defensive-label">
                             Defensive
                         </label>
                     </div>
@@ -58,7 +58,7 @@ const ComboTypeSelector = () => {
                             checked={selectedOption === 'balanced'}
                             onChange={handleOptionChange}
                         />
-                        <label for="balanced" className="balanced-label">
+                        <label htmlFor="balanced" className="balanced-label">
                             Balanced
                         </label>
                     </div>
@@ -71,7 +71,7 @@ const ComboTypeSelector = () => {
                             checked={selectedOption === 'reactive'}
                             onChange={handleOptionChange}
                         />
-                        <label for="reactive" className="reactive-label">
+                        <label htmlFor="reactive" className="reactive-label">
                             Reactive
                         </label>
                     </div>
