@@ -53,12 +53,12 @@ body {
 }
 
 h1 {
-  margin: 3% auto;
+  margin: 2% auto;
   width: 70%;
   color: #fff;
   background-color: #ff0000;
   border: solid 6px #110074;
-  font-size: 104px;
+  font-size: 100px;
   font-family: 'VT323';
 }
 .combo-generator-container{
@@ -72,7 +72,7 @@ h1 {
 .generated-combo-container{
   margin: 0 auto;
   margin-right: 40%;
-  font-size: 46px;
+  font-size: 42px;
   font-family: 'VT323';
 }
 input[type="radio"]{
@@ -119,8 +119,11 @@ h2 {
 }
 
 .generated-combo-container li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 2px;
   color: #fff;
-  background-color: #110074;
+  background-color: #ff0000;
   border: solid 3px #000;
 }
 
@@ -141,5 +144,20 @@ h2 {
 }
 
 .navbar-items a:hover {
+  color: blue;
+}
+
+.copyright-container {
+  margin-top: 3%;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  font-size: 30px;
+  font-family: 'VT323';
+}
+a {
+  color: #fff;
+}
+a:hover {
   color: blue;
 }
