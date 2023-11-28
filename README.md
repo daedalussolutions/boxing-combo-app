@@ -1,7 +1,6 @@
 Boxing Combo Generator made using React.
 
-![Screenshot](/assets/images/screenshot.PNG?raw=true)
-
+![screenshot](https://github.com/daedalussolutions/boxing-combo-app/assets/119969921/08a810e7-90f2-40ce-9a7e-ee1f5b8c39c5)
 
 Generates a boxing punch/movement combo based on what type of combo the user selects.
 
