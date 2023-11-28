@@ -161,3 +161,24 @@ a {
 a:hover {
   color: blue;
 }
+.about-info-container {
+  color: #fff;
+  background-color: #110074;
+  border: solid 3px #000;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-container p {
+  font-size: 28px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.about-container a {
+  font-family: 'VT323';
+  font-size: 48px;
+  padding: 30px;
+  text-decoration: none;
+}
+

@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import ComboGenerator from './pages/ComboGenerator.js';
 import About from './pages/About.js';
 import bgImage from './assets/images/ring.jpg'
-import Footer from './components/Footer.js'
 
 function App() {
   return (
@@ -25,7 +24,7 @@ function App() {
           } />
         </Routes>
       </Router>
-      <Footer />
+      
     </div>
 
   );
